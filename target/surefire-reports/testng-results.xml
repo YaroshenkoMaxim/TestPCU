@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-24T14:51:55 EEST" name="MyTestSuite1" finished-at="2022-05-24T14:52:22 EEST" duration-ms="27027">
+    <groups>
+    </groups>
+    <test started-at="2022-05-24T14:51:55 EEST" name="Tests" finished-at="2022-05-24T14:52:22 EEST" duration-ms="27027">
+      <class name="ua.price.tests.TrialTest">
+        <test-method signature="test()[pri:0, instance:ua.price.tests.TrialTest@2667f029]" started-at="2022-05-24T14:51:55 EEST" name="test" finished-at="2022-05-24T14:52:22 EEST" duration-ms="26941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- ua.price.tests.TrialTest -->
+    </test> <!-- Tests -->
+  </suite> <!-- MyTestSuite1 -->
+</testng-results>
