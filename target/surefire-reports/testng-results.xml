@@ -2,43 +2,41 @@
 <testng-results ignored="0" total="7" passed="0" failed="7" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-13T23:11:46 EEST" name="MyTestSuite1" finished-at="2022-06-13T23:12:06 EEST" duration-ms="19430">
+  <suite started-at="2022-06-13T23:14:50 EEST" name="MyTestSuite1" finished-at="2022-06-13T23:15:02 EEST" duration-ms="12063">
     <groups>
     </groups>
-    <test started-at="2022-06-13T23:11:46 EEST" name="Tests" finished-at="2022-06-13T23:12:06 EEST" duration-ms="19430">
+    <test started-at="2022-06-13T23:14:50 EEST" name="Tests" finished-at="2022-06-13T23:15:02 EEST" duration-ms="12063">
       <class name="ua.price.desktop.tests.TestClicks">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ua.price.desktop.tests.TestClicks@52b1beb6]" started-at="2022-06-13T23:11:46 EEST" name="setUp" finished-at="2022-06-13T23:11:58 EEST" duration-ms="12118" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ua.price.desktop.tests.TestClicks@35ef1869]" started-at="2022-06-13T23:14:50 EEST" name="setUp" finished-at="2022-06-13T23:15:00 EEST" duration-ms="9544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testClickType1()[pri:0, instance:ua.price.desktop.tests.TestClicks@52b1beb6]" started-at="2022-06-13T23:11:58 EEST" name="testClickType1" finished-at="2022-06-13T23:12:05 EEST" duration-ms="6582" status="FAIL">
+        <test-method signature="testClickType1()[pri:0, instance:ua.price.desktop.tests.TestClicks@35ef1869]" started-at="2022-06-13T23:15:00 EEST" name="testClickType1" finished-at="2022-06-13T23:15:02 EEST" duration-ms="2008" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=102.0.5005.63)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b439cb8bbdd06cb5da7c8b3bb0ac3074, getCurrentWindowHandle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50387/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b439cb8bbdd06cb5da7c8b3bb0ac3074]]>
+Command: [5c95a2dadfd024a5904843002f97700f, getCurrentWindowHandle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c95a2dadfd024a5904843002f97700f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=102.0.5005.63)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b439cb8bbdd06cb5da7c8b3bb0ac3074, getCurrentWindowHandle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50387/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b439cb8bbdd06cb5da7c8b3bb0ac3074
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+Command: [5c95a2dadfd024a5904843002f97700f, getCurrentWindowHandle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c95a2dadfd024a5904843002f97700f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -51,10 +49,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
 at org.openqa.selenium.remote.RemoteWebDriver.getWindowHandle(RemoteWebDriver.java:485)
 at ua.price.desktop.applogic.CatalogFirm2533Helper.openPage(CatalogFirm2533Helper.java:23)
 at ua.price.desktop.tests.TestClicks.testClickType1(TestClicks.java:8)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -89,34 +85,32 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testClickType1 -->
-        <test-method signature="testClickType2()[pri:0, instance:ua.price.desktop.tests.TestClicks@52b1beb6]" started-at="2022-06-13T23:12:05 EEST" name="testClickType2" finished-at="2022-06-13T23:12:05 EEST" duration-ms="11" status="FAIL">
+        <test-method signature="testClickType2()[pri:0, instance:ua.price.desktop.tests.TestClicks@35ef1869]" started-at="2022-06-13T23:15:02 EEST" name="testClickType2" finished-at="2022-06-13T23:15:02 EEST" duration-ms="16" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=102.0.5005.63)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b439cb8bbdd06cb5da7c8b3bb0ac3074, get {url=https://price.ua/ua/firm2533p1.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50387/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b439cb8bbdd06cb5da7c8b3bb0ac3074]]>
+Command: [5c95a2dadfd024a5904843002f97700f, get {url=https://price.ua/ua/firm2533p1.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c95a2dadfd024a5904843002f97700f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=102.0.5005.63)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b439cb8bbdd06cb5da7c8b3bb0ac3074, get {url=https://price.ua/ua/firm2533p1.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50387/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b439cb8bbdd06cb5da7c8b3bb0ac3074
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+Command: [5c95a2dadfd024a5904843002f97700f, get {url=https://price.ua/ua/firm2533p1.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c95a2dadfd024a5904843002f97700f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -127,10 +121,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
 at ua.price.desktop.applogic.CatalogFirm2533Helper.openPage(CatalogFirm2533Helper.java:22)
 at ua.price.desktop.tests.TestClicks.testClickType2(TestClicks.java:17)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -165,34 +157,32 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testClickType2 -->
-        <test-method signature="testClickType3()[pri:0, instance:ua.price.desktop.tests.TestClicks@52b1beb6]" started-at="2022-06-13T23:12:05 EEST" name="testClickType3" finished-at="2022-06-13T23:12:05 EEST" duration-ms="83" status="FAIL">
+        <test-method signature="testClickType3()[pri:0, instance:ua.price.desktop.tests.TestClicks@35ef1869]" started-at="2022-06-13T23:15:02 EEST" name="testClickType3" finished-at="2022-06-13T23:15:02 EEST" duration-ms="10" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=102.0.5005.63)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b439cb8bbdd06cb5da7c8b3bb0ac3074, get {url=https://price.ua/ua/firm2533p1.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50387/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b439cb8bbdd06cb5da7c8b3bb0ac3074]]>
+Command: [5c95a2dadfd024a5904843002f97700f, get {url=https://price.ua/ua/firm2533p1.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c95a2dadfd024a5904843002f97700f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=102.0.5005.63)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b439cb8bbdd06cb5da7c8b3bb0ac3074, get {url=https://price.ua/ua/firm2533p1.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50387/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b439cb8bbdd06cb5da7c8b3bb0ac3074
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+Command: [5c95a2dadfd024a5904843002f97700f, get {url=https://price.ua/ua/firm2533p1.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c95a2dadfd024a5904843002f97700f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -203,10 +193,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
 at ua.price.desktop.applogic.CatalogFirm2533Helper.openPage(CatalogFirm2533Helper.java:22)
 at ua.price.desktop.tests.TestClicks.testClickType3(TestClicks.java:25)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -241,34 +229,32 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testClickType3 -->
-        <test-method signature="testClickType4()[pri:0, instance:ua.price.desktop.tests.TestClicks@52b1beb6]" started-at="2022-06-13T23:12:05 EEST" name="testClickType4" finished-at="2022-06-13T23:12:05 EEST" duration-ms="17" status="FAIL">
+        <test-method signature="testClickType4()[pri:0, instance:ua.price.desktop.tests.TestClicks@35ef1869]" started-at="2022-06-13T23:15:02 EEST" name="testClickType4" finished-at="2022-06-13T23:15:02 EEST" duration-ms="13" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=102.0.5005.63)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b439cb8bbdd06cb5da7c8b3bb0ac3074, get {url=https://price.ua/ua/catalog5076.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50387/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b439cb8bbdd06cb5da7c8b3bb0ac3074]]>
+Command: [5c95a2dadfd024a5904843002f97700f, get {url=https://price.ua/ua/catalog5076.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c95a2dadfd024a5904843002f97700f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=102.0.5005.63)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b439cb8bbdd06cb5da7c8b3bb0ac3074, get {url=https://price.ua/ua/catalog5076.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50387/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b439cb8bbdd06cb5da7c8b3bb0ac3074
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+Command: [5c95a2dadfd024a5904843002f97700f, get {url=https://price.ua/ua/catalog5076.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c95a2dadfd024a5904843002f97700f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -279,10 +265,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
 at ua.price.desktop.applogic.KNU5076Helper.openPage(KNU5076Helper.java:22)
 at ua.price.desktop.tests.TestClicks.testClickType4(TestClicks.java:32)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -317,34 +301,32 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testClickType4 -->
-        <test-method signature="testClickType6()[pri:0, instance:ua.price.desktop.tests.TestClicks@52b1beb6]" started-at="2022-06-13T23:12:05 EEST" name="testClickType6" finished-at="2022-06-13T23:12:05 EEST" duration-ms="9" status="FAIL">
+        <test-method signature="testClickType6()[pri:0, instance:ua.price.desktop.tests.TestClicks@35ef1869]" started-at="2022-06-13T23:15:02 EEST" name="testClickType6" finished-at="2022-06-13T23:15:02 EEST" duration-ms="36" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=102.0.5005.63)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b439cb8bbdd06cb5da7c8b3bb0ac3074, get {url=https://price.ua/ua/drugie_bej-begi_istorija_anglijskogo_futbola_9789662320121/prices/3465832.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50387/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b439cb8bbdd06cb5da7c8b3bb0ac3074]]>
+Command: [5c95a2dadfd024a5904843002f97700f, get {url=https://price.ua/ua/drugie_bej-begi_istorija_anglijskogo_futbola_9789662320121/prices/3465832.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c95a2dadfd024a5904843002f97700f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=102.0.5005.63)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b439cb8bbdd06cb5da7c8b3bb0ac3074, get {url=https://price.ua/ua/drugie_bej-begi_istorija_anglijskogo_futbola_9789662320121/prices/3465832.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50387/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b439cb8bbdd06cb5da7c8b3bb0ac3074
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+Command: [5c95a2dadfd024a5904843002f97700f, get {url=https://price.ua/ua/drugie_bej-begi_istorija_anglijskogo_futbola_9789662320121/prices/3465832.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c95a2dadfd024a5904843002f97700f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -355,10 +337,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
 at ua.price.desktop.applogic.ModelInSaleHasReviewPricesTabHelper.openPage(ModelInSaleHasReviewPricesTabHelper.java:23)
 at ua.price.desktop.tests.TestClicks.testClickType6(TestClicks.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -393,34 +373,32 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testClickType6 -->
-        <test-method signature="testClickType8()[pri:0, instance:ua.price.desktop.tests.TestClicks@52b1beb6]" started-at="2022-06-13T23:12:05 EEST" name="testClickType8" finished-at="2022-06-13T23:12:05 EEST" duration-ms="38" status="FAIL">
+        <test-method signature="testClickType8()[pri:0, instance:ua.price.desktop.tests.TestClicks@35ef1869]" started-at="2022-06-13T23:15:02 EEST" name="testClickType8" finished-at="2022-06-13T23:15:02 EEST" duration-ms="11" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=102.0.5005.63)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b439cb8bbdd06cb5da7c8b3bb0ac3074, get {url=https://price.ua/ua/discounted.html?shop_id[0]=2533}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50387/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b439cb8bbdd06cb5da7c8b3bb0ac3074]]>
+Command: [5c95a2dadfd024a5904843002f97700f, get {url=https://price.ua/ua/discounted.html?shop_id[0]=2533}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c95a2dadfd024a5904843002f97700f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=102.0.5005.63)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b439cb8bbdd06cb5da7c8b3bb0ac3074, get {url=https://price.ua/ua/discounted.html?shop_id[0]=2533}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50387/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b439cb8bbdd06cb5da7c8b3bb0ac3074
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+Command: [5c95a2dadfd024a5904843002f97700f, get {url=https://price.ua/ua/discounted.html?shop_id[0]=2533}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c95a2dadfd024a5904843002f97700f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -431,10 +409,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
 at ua.price.desktop.applogic.DiscountedFirm2533Helper.openPage(DiscountedFirm2533Helper.java:22)
 at ua.price.desktop.tests.TestClicks.testClickType8(TestClicks.java:47)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -469,34 +445,32 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testClickType8 -->
-        <test-method signature="testClickType9()[pri:0, instance:ua.price.desktop.tests.TestClicks@52b1beb6]" started-at="2022-06-13T23:12:05 EEST" name="testClickType9" finished-at="2022-06-13T23:12:06 EEST" duration-ms="22" status="FAIL">
+        <test-method signature="testClickType9()[pri:0, instance:ua.price.desktop.tests.TestClicks@35ef1869]" started-at="2022-06-13T23:15:02 EEST" name="testClickType9" finished-at="2022-06-13T23:15:02 EEST" duration-ms="9" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=102.0.5005.63)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b439cb8bbdd06cb5da7c8b3bb0ac3074, get {url=https://price.ua/ua/firm79503p1.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50387/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b439cb8bbdd06cb5da7c8b3bb0ac3074]]>
+Command: [5c95a2dadfd024a5904843002f97700f, get {url=https://price.ua/ua/firm79503p1.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c95a2dadfd024a5904843002f97700f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=102.0.5005.63)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'МАКСИМ-VAIO', ip: '192.168.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b439cb8bbdd06cb5da7c8b3bb0ac3074, get {url=https://price.ua/ua/firm79503p1.html}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50387/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b439cb8bbdd06cb5da7c8b3bb0ac3074
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+Command: [5c95a2dadfd024a5904843002f97700f, get {url=https://price.ua/ua/firm79503p1.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c95a2dadfd024a5904843002f97700f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -507,10 +481,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
 at ua.price.desktop.applogic.CatalogFirmHubberHelper.openPage(CatalogFirmHubberHelper.java:21)
 at ua.price.desktop.tests.TestClicks.testClickType9(TestClicks.java:54)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
