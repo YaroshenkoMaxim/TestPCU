@@ -31,10 +31,4 @@ public class FirmInfo2533Page extends PageBase {
 	public Breadcrumbs getBreadcrumbs() {
 		return breadcrumbs;
 	}
-	
-	//public FirmInfo2533PageDesktopPriceUa clickFirmInfo() {
-		//driver.findElement(By.xpath("//a[@data-content-div='firm-info']")).click();
-		
-		//return new FirmInfo2533PageDesktopPriceUa(driver);
-	//}
 }

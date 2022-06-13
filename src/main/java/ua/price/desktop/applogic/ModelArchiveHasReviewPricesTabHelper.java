@@ -23,12 +23,6 @@ public class ModelArchiveHasReviewPricesTabHelper extends BaseHelper {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(page.getRateStar().rateStar()));
 	}
 	
-	/*public ModelArchiveHasReviewPricesTabHelper changeRegionTo(String region) {
-		changeRegionTo(page.getHeader(), region);
-		
-		return this;
-	}*/
-	
 	public ModelArchiveHasReviewPricesTabHelper changeRegionToAllUkraine() {
 		changeRegionTo(page.getHeader(), 0);
 		

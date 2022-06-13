@@ -11,7 +11,6 @@ import ua.price.desktop.pages.DiscountedFirm2533Page;
 public class DiscountedFirm2533Helper extends BaseHelper {
 	private DiscountedFirm2533Page page;
 	private int click_type = 0;
-	//private boolean isFirstClick = false;
 	private String handle;
 	
 	public DiscountedFirm2533Helper(ApplicationManager app) {
@@ -27,21 +26,14 @@ public class DiscountedFirm2533Helper extends BaseHelper {
 	
 	public void ensurePageLoaded() {
 		ensurePageLoaded(page);
-		//ensureVisabilityObjectLoaded(page.getElementForEnsurePageLoaded1());
-		ensurePresenceObjectLoaded(page.getElementForEnsurePageLoaded1());
-		ensurePresenceObjectLoaded(page.getElementForEnsurePageLoaded2());
+		wait.until(ExpectedConditions.presenceOfElementLocated(page.getElementForEnsurePageLoaded1()));
+		wait.until(ExpectedConditions.presenceOfElementLocated(page.getElementForEnsurePageLoaded2()));
 	}
 	
 	public DiscountedFirm2533Helper openNewTab() {
 		openNewTab();
 		return this;
 	}
-	
-	/*public DiscountedFirm2533Helper changeRegionTo(String region) {
-		changeRegionTo(page.getHeader(), region);
-		
-		return this;
-	}*/
 	
 	public DiscountedFirm2533Helper changeRegionToAllUkraine() {
 		changeRegionTo(page.getHeader(), 0);
@@ -69,8 +61,7 @@ public class DiscountedFirm2533Helper extends BaseHelper {
 		driver.close();
 
 		driver.switchTo().window(handle);
-		
-		//app.getOutclickPageHelper().closeMainGateTabAndSwitchToOldTab();
+
 		click_type = 8;
 		
 		return this;
@@ -85,8 +76,6 @@ public class DiscountedFirm2533Helper extends BaseHelper {
 	}
 	
 	public DiscountedFirm2533Helper checkClickInTable() {
-		//isFirstClick = isFirstClick == false ? true : false;
-		
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
 		
 		if (tabs.size() == 1)

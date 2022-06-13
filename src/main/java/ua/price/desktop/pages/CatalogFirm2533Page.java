@@ -21,8 +21,6 @@ public class CatalogFirm2533Page extends PageBase {
 		cardBid = new CatalogFirm2533ModelCardBid();
 		firmInfoTab = new FirmInfoTabs();
 		outclickPopUpDesktopPriceUa = new OutclickPopUp();
-		
-		//header = new HeaderDesktopPriceUa<CatalogFirm2533PageDesktopPriceUa>(driver, this);
 	}
 	
 	public FilterPrice getFilterPrice() {

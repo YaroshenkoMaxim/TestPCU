@@ -14,14 +14,6 @@ public class SalesFirm2533Page extends PageBase {
 		hjRemoteVarsFrame = new HjRemoteVarsFrame();
 	}
 	
-	/*public SalesFirm2533DesktopPriceUaPage ensurePageLoaded() {
-		header.ensureObjectLoaded();
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='ads-banner ads-banner15']")));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("_hjRemoteVarsFrame")));
-		
-		return this;
-	}*/
-	
 	public HjRemoteVarsFrame getHjRemoteVarsFrame() {
 		return hjRemoteVarsFrame;
 	}

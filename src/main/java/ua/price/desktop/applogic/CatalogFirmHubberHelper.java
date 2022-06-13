@@ -3,6 +3,7 @@ package ua.price.desktop.applogic;
 import java.util.ArrayList;
 
 import org.openqa.selenium.WindowType;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import ua.price.desktop.pages.CatalogFirmHubberPage;
 
@@ -25,16 +26,9 @@ public class CatalogFirmHubberHelper extends BaseHelper {
 	
 	public void ensurePageLoaded() {
 		ensurePageLoaded(page);
-		ensureVisabilityObjectLoaded(page.getElementForEnsurePageLoaded1());
-		ensurePresenceObjectLoaded(page.getElementForEnsurePageLoaded2());
-		//ensurePresenceObjectLoaded(page.getElementForEnsurePageLoaded3());
+		wait.until(ExpectedConditions.visibilityOfElementLocated(page.getElementForEnsurePageLoaded1()));
+		wait.until(ExpectedConditions.presenceOfElementLocated(page.getElementForEnsurePageLoaded2()));
 	}
-	
-	/*public CatalogFirmHubberHelper changeRegionTo(String region) {
-		changeRegionTo(page.getHeader(), region);
-		
-		return this;
-	}*/
 	
 	public CatalogFirmHubberHelper changeRegionToAllUkraine() {
 		changeRegionTo(page.getHeader(), 0);
@@ -75,9 +69,6 @@ public class CatalogFirmHubberHelper extends BaseHelper {
 			driver.switchTo().newWindow(WindowType.TAB);
 		else 
 			driver.switchTo().window(app.getFirmClicksPageHelper().getHandle());
-
-		
-		//isFirstClick = isFirstClick == false ? true : false;
 		
 		app.getFirmClicksPageHelper().openPage(79503).checkLastClickFirm79503(click_type);
 		
@@ -85,13 +76,4 @@ public class CatalogFirmHubberHelper extends BaseHelper {
 				
 		return this;
 	}
-	
-	/*public OutclickPage<CatalogFirm2533PageDesktopPriceUa> clickGoSiteCatalogFirm2533PageDesktopPriceUa() {
-		CatalogFirm2533PageDesktopPriceUa page = app.getNavigationHelper().openCatalogFirm2533PageDesktopPriceUa();
-		page.getHeader().changeRegionTo("��� ������");
-		String button = page.getCatalogFirm2533ModelCardGoSite().getPathButtonBuy();
-		driver.findElement(By.xpath(button)).click();
-		
-		return new OutclickPage<CatalogFirm2533PageDesktopPriceUa>(driver, page);
-	}*/
 }

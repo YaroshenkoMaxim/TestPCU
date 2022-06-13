@@ -7,7 +7,6 @@ import ua.price.mobile.pages.SalesFirm2533Page;
 public class SalesFirm2533Helper extends BaseHelper {
 	private SalesFirm2533Page page;
 	private int click_type = 0;
-	//private boolean isFirstClick = false;
 	
 	public SalesFirm2533Helper(ApplicationManager app) {
 		super(app);
@@ -33,7 +32,7 @@ public class SalesFirm2533Helper extends BaseHelper {
 	}
 	
 	public SalesFirm2533Helper clickToShopButton() {
-		clickElement(page.getSaleCard().getToShopButton());
+		driver.findElement(page.getSaleCard().getToShopButton()).click();
 		app.getOutclickPageHelper().closeMainGateTabAndSwitchToOldTab();
 		click_type = 5;
 		
@@ -41,15 +40,13 @@ public class SalesFirm2533Helper extends BaseHelper {
 	}
 	
 	public SalesFirm2533Helper clickShowPhoneButton() {
-		clickElement(page.getSaleCard().getShowPhoneButton());
+		driver.findElement(page.getSaleCard().getShowPhoneButton()).click();
 		click_type = 6;
 		
 		return this;
 	}
 	
 	public SalesFirm2533Helper checkClickInTable() {
-		//isFirstClick = isFirstClick == false ? true : false;
-		
 		app.getFirmClicksPageHelper().openPage(2533).checkLastClickFirm2533(click_type);
 		
 		return this;

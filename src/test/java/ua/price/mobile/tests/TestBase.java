@@ -9,6 +9,6 @@ public class TestBase {
 	
 	@BeforeTest
 	public void setUp() {
-		app = new ApplicationManager();//Helper().getApplicationManagerMobilePriceUa();
+		app = new ApplicationManager();
 	}
 }

@@ -3,10 +3,9 @@ package ua.price.mobile.tests;
 import org.testng.annotations.Test;
 
 public class TestClicks extends TestBase {
-	//@Test
+	@Test
 	public void testClickType() {
-		//app.getCatalogFirm2533PageHelper().openPage().changeRegionTo("Вся Україна")
-		app.getCatalogFirm2533PageHelper().openPage().changeRegionToAllUkraine()//.changeRegionTo("Вся Україна")
+		app.getCatalogFirm2533PageHelper().openPage().changeRegionToAllUkraine()
 										.clickGoSite().checkClickInTable()
 										.clickGoSite().checkClickInTable();
 	}
@@ -18,7 +17,7 @@ public class TestClicks extends TestBase {
 										.clickGoSite().checkClickInTable();
 	}
 	
-	//@Test
+	@Test
 	public void testClickType2() {
 		app.getCatalogFirm2533PageHelper().openPage().changeRegionToAllUkraine()
 										.srollToBid()
@@ -29,14 +28,13 @@ public class TestClicks extends TestBase {
 	//@Test
 	public void testClickType3() {
 		app.getCatalogFirm2533PageHelper().openPage().changeRegionToAllUkraine()
-										.scrollToFirmInfoTabs()//changeRegionTo("Вся Україна")
+										.scrollToFirmInfoTabs()
 										.clickFirmInfo().checkClickInTable()
 										.clickFirmInfo().checkClickInTable();
 	}
 	
 	@Test
 	public void testClickType4() {
-		//app.getKNU5076Helper().openPage().changeRegionTo("Вся Україна")
 		app.getKNU5076Helper().openPage().changeRegionToAllUkraine()
 		.clickContextFirm2533().checkClickInTable()
 		.clickContextFirm2533().checkClickInTable();	

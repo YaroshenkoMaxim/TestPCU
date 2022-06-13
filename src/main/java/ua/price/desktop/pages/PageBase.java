@@ -22,9 +22,7 @@ public abstract class PageBase {
 		return By.xpath("//div[@class='ui-dialog ui-corner-all ui-widget ui-widget-content ui-front default-gray-popup']");
 	}
 	
-	public PageBase ensurePageLoaded() {
-		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='ui-dialog ui-corner-all ui-widget ui-widget-content ui-front default-gray-popup']")));
-		
+	public PageBase ensurePageLoaded() {		
 		return this;
 	}
 	

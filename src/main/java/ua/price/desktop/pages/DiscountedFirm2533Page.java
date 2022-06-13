@@ -13,14 +13,6 @@ public class DiscountedFirm2533Page extends PageBase {
 		discountedCard = new SaleCard();
 	}
 	
-	/*public SalesFirm2533DesktopPriceUaPage ensurePageLoaded() {
-		header.ensureObjectLoaded();
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='ads-banner ads-banner15']")));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("_hjRemoteVarsFrame")));
-		
-		return this;
-	}*/
-	
 	public By getElementForEnsurePageLoaded1() {
 		return By.xpath("//div[@class='ads-banner ads-banner15']");
 	}

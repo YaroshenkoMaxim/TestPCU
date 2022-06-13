@@ -11,7 +11,6 @@ import ua.price.mobile.pages.FirmInfo2533Page;
 public class FirmInfo2533Helper extends BaseHelper {
 	private FirmInfo2533Page page;
 	private int click_type = 3;
-	//private boolean isFirstClick = false;
 	private String handle;
 	
 	public FirmInfo2533Helper(ApplicationManager app) {
@@ -56,9 +55,7 @@ public class FirmInfo2533Helper extends BaseHelper {
 		return this;
 	}
 	
-	public FirmInfo2533Helper checkClickInTable() {
-		//isFirstClick = isFirstClick == false ? true : false;
-		
+	public FirmInfo2533Helper checkClickInTable() {		
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
 		
 		if (tabs.size() == 1)

@@ -14,15 +14,6 @@ public class FirmInfo2533Page extends PageBase {
 		firmInfoTab = new FirmInfoTabs();
 	}
 	
-	/*public By getElementForEnsurePageLoaded1() {
-		//return getHeader().getElementForEnsureObjectLoaded();
-		return getHeader().changeRegionLink();
-	}
-	
-	public By getElementForEnsurePageLoaded2() {
-		return By.id("page-breadcrumbs");
-	}*/
-	
 	public Breadcrumbs getBreadcrumbs() {
 		return breadcrumbs;
 	}
@@ -30,10 +21,4 @@ public class FirmInfo2533Page extends PageBase {
 	public FirmInfoTabs getFirmInfoTabs() {
 		return firmInfoTab;
 	}
-	
-	//public FirmInfo2533PageDesktopPriceUa clickFirmInfo() {
-		//driver.findElement(By.xpath("//a[@data-content-div='firm-info']")).click();
-		
-		//return new FirmInfo2533PageDesktopPriceUa(driver);
-	//}
 }

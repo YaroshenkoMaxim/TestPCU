@@ -9,6 +9,6 @@ public class TestBase {
 	
 	@BeforeTest
 	public void setUp() {
-		app = new ApplicationManager();//.getApplicationManager();
+		app = new ApplicationManager();
 	}
 }

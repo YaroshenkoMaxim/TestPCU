@@ -11,7 +11,6 @@ import ua.price.desktop.pages.KNU5076Page;
 public class KNU5076Helper extends BaseHelper {
 	private KNU5076Page page;
 	private int click_type = 4;
-	//private boolean isFirstClick = false;
 	private String handle;
 	
 	public KNU5076Helper(ApplicationManager app) {
@@ -28,12 +27,6 @@ public class KNU5076Helper extends BaseHelper {
 	public void ensurePageLoaded() {
 		ensurePageLoaded(page);
 	}
-	
-	/*public KNU5076Helper changeRegionTo(String region) {
-		changeRegionTo(page.getHeader(), region);
-		
-		return this;
-	}*/
 	
 	public KNU5076Helper changeRegionToAllUkraine() {
 		changeRegionTo(page.getHeader(), 0);
@@ -71,8 +64,6 @@ public class KNU5076Helper extends BaseHelper {
 		
 		app.getOutclickPageHelper().ensurePageLoaded();
 		
-		//app.getOutclickPageHelper().closeMainGateTabAndSwitchToOldTab();
-		
 		driver.close();
 		driver.switchTo().window(getHandle());
 		
@@ -83,17 +74,13 @@ public class KNU5076Helper extends BaseHelper {
 	
 	public KNU5076Helper closeOutclickPopUp() {
 		OutclickPopUp outclickPopUpDesktopPriceUa = new OutclickPopUp();
-		ensureVisabilityObjectLoaded(outclickPopUpDesktopPriceUa.getElementForEnsureObjectLoaded());
+		wait.until(ExpectedConditions.visibilityOfElementLocated(outclickPopUpDesktopPriceUa.getElementForEnsureObjectLoaded()));
 		driver.findElement(outclickPopUpDesktopPriceUa.getCloseButton()).click();
 		
 		return this;
 	}
 	
 	public KNU5076Helper checkClickInTable() {
-		//isFirstClick = isFirstClick == false ? true : false;
-		
-		//app.getApplicationManagerHelper().getApplicationManagerClicks().getFirmClicksPageHelper().openPage(2533).checkLastClickFirm2533(click_type);
-		
 		handle = driver.getWindowHandle();
 		
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
@@ -109,15 +96,6 @@ public class KNU5076Helper extends BaseHelper {
 		
 		return this;
 	}
-	
-	/*
-	public int getCardsCount() {
-		return cardsCount;
-	}
-	
-	public void compareCardsCount() {
-		super.compareCardsCount(getCardsCount(), "//div[starts-with(@class,'product-block type2')]");
-	}*/
 	
 	public String getHandle() {
 		return handle;

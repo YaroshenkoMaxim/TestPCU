@@ -12,7 +12,6 @@ import ua.price.mobile.pages.CatalogFirm2533Page;;
 public class CatalogFirm2533Helper extends BaseHelper {
 	private CatalogFirm2533Page page;
 	private int click_type = 0;
-	//private boolean isFirstClick = false;
 	private String handle;
 	
 	public CatalogFirm2533Helper(ApplicationManager app) {
@@ -52,7 +51,6 @@ public class CatalogFirm2533Helper extends BaseHelper {
 	
 	public CatalogFirm2533Helper clickGoSite() {
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
-		//driver.findElement(page.getCatalogFirm2533ModelCardGoSite().getButtonBuy()).click();
 		
 		driver.findElement(By.xpath("//a[@class='prefix by-popular']")).sendKeys(Keys.DOWN);
 		driver.findElement(page.getCatalogFirm2533ModelCardGoSite().getCardName()).click();;
@@ -64,13 +62,11 @@ public class CatalogFirm2533Helper extends BaseHelper {
 				break;
 			}
 		app.getOutclickPageHelper().ensurePageLoaded();
-		//ensurePageLoaded();
 		
 		driver.close();
 
 		driver.switchTo().window(handle);
 
-		//app.getOutclickPageHelper().closeMainGateTabAndSwitchToOldTab();
 		click_type = 1;
 		
 		return this;
@@ -79,7 +75,6 @@ public class CatalogFirm2533Helper extends BaseHelper {
 	public CatalogFirm2533Helper clickBid() {
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
 		
-		//driver.findElement(By.xpath("//a[@class='prefix by-popular']")).sendKeys(Keys.PAGE_DOWN);
 		driver.findElement(page.getCatalogFirm2533ModelCardBid().getButtonBuy()).click();
 		ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
 		
@@ -93,7 +88,6 @@ public class CatalogFirm2533Helper extends BaseHelper {
 		
 		driver.close();
 	    driver.switchTo().window(handle);
-		//app.getOutclickPageHelper().closeMainGateTabAndSwitchToOldTab();
 		click_type = 2;
 		
 		return this;
@@ -120,7 +114,6 @@ public class CatalogFirm2533Helper extends BaseHelper {
 	}
 	
 	public CatalogFirm2533Helper checkClickInTable() {
-		//isFirstClick = isFirstClick == false ? true : false;
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
 		
 		if (tabs.size() == 1)
@@ -132,13 +125,4 @@ public class CatalogFirm2533Helper extends BaseHelper {
 		
 		return this;
 	}
-	
-	/*public OutclickPage<CatalogFirm2533PageDesktopPriceUa> clickGoSiteCatalogFirm2533PageDesktopPriceUa() {
-		CatalogFirm2533PageDesktopPriceUa page = app.getNavigationHelper().openCatalogFirm2533PageDesktopPriceUa();
-		page.getHeader().changeRegionTo("Вся Україна");
-		String button = page.getCatalogFirm2533ModelCardGoSite().getPathButtonBuy();
-		driver.findElement(By.xpath(button)).click();
-		
-		return new OutclickPage<CatalogFirm2533PageDesktopPriceUa>(driver, page);
-	}*/
 }

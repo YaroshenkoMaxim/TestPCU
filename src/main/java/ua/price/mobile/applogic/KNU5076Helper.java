@@ -10,7 +10,6 @@ import ua.price.mobile.pages.KNU5076Page;
 public class KNU5076Helper extends BaseHelper {
 	private KNU5076Page page;
 	private int click_type = 4;
-	//private boolean isFirstClick = false;
 	private String handle;
 	
 	public KNU5076Helper(ApplicationManager app) {
@@ -55,7 +54,6 @@ public class KNU5076Helper extends BaseHelper {
 			}
 		
 		app.getOutclickPageHelper().ensurePageLoaded();
-		//app.getOutclickPageHelper().closeMainGateTabAndSwitchToOldTab();
 		driver.close();
 		driver.switchTo().window(handle);
 		click_type = 4;
@@ -63,9 +61,7 @@ public class KNU5076Helper extends BaseHelper {
 		return this;
 	}
 	
-	public KNU5076Helper checkClickInTable() {
-		//isFirstClick = isFirstClick == false ? true : false;
-		
+	public KNU5076Helper checkClickInTable() {		
 		handle = driver.getWindowHandle();
 		
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
@@ -81,13 +77,4 @@ public class KNU5076Helper extends BaseHelper {
 		
 		return this;
 	}
-	
-	/*
-	public int getCardsCount() {
-		return cardsCount;
-	}
-	
-	public void compareCardsCount() {
-		super.compareCardsCount(getCardsCount(), "//div[starts-with(@class,'product-block type2')]");
-	}*/
 }

@@ -32,12 +32,6 @@ public class CatalogFirm2533Helper extends BaseHelper {
 		wait.until(ExpectedConditions.presenceOfElementLocated(page.getHjRemoteVarsFrame().getFrame()));
 	}
 	
-	/*public CatalogFirm2533Helper changeRegionTo(String region) {
-		changeRegionTo(page.getHeader(), region);
-		
-		return this;
-	}*/
-	
 	public CatalogFirm2533Helper changeRegionToAllUkraine() {
 		changeRegionTo(page.getHeader(), 0);
 		
@@ -70,13 +64,10 @@ public class CatalogFirm2533Helper extends BaseHelper {
 			}
 		
 		app.getOutclickPageHelper().ensurePageLoaded();
-		//ensurePageLoaded();
 		
 		driver.close();
 
 		driver.switchTo().window(getHandle());
-	    
-		//app.getOutclickPageHelper().closeMainGateTabAndSwitchToOldTab();
 		
 		click_type = 1;
 		
@@ -100,9 +91,6 @@ public class CatalogFirm2533Helper extends BaseHelper {
 		
 		driver.close();
 	    driver.switchTo().window(getHandle());
-		
-		
-		//app.getOutclickPageHelper().closeMainGateTabAndSwitchToOldTab();
 	    
 		click_type = 2;
 		
@@ -131,9 +119,6 @@ public class CatalogFirm2533Helper extends BaseHelper {
 	}
 	
 	public CatalogFirm2533Helper checkClickInTable() {
-		//isFirstClick = isFirstClick == false ? true : false;
-		
-		//app.getApplicationManagerHelper().getApplicationManagerClicks().getFirmClicksPageHelper().openPage(2533).checkLastClickFirm2533(click_type);
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
 		
 		if (tabs.size() == 1)
@@ -142,20 +127,9 @@ public class CatalogFirm2533Helper extends BaseHelper {
 			driver.switchTo().window(app.getFirmClicksPageHelper().getHandle());
 		app.getFirmClicksPageHelper().openPage(2533).checkLastClickFirm2533(click_type);
 		driver.switchTo().window(getHandle());
-		//switchToOriginalTab();
-		//switchToOtherTab();
 		
 		return this;
 	}
-	
-	/*public OutclickPage<CatalogFirm2533PageDesktopPriceUa> clickGoSiteCatalogFirm2533PageDesktopPriceUa() {
-		CatalogFirm2533PageDesktopPriceUa page = app.getNavigationHelper().openCatalogFirm2533PageDesktopPriceUa();
-		page.getHeader().changeRegionTo("��� ������");
-		String button = page.getCatalogFirm2533ModelCardGoSite().getPathButtonBuy();
-		driver.findElement(By.xpath(button)).click();
-		
-		return new OutclickPage<CatalogFirm2533PageDesktopPriceUa>(driver, page);
-	}*/
 	
 	public String getHandle() {
 		return handle;

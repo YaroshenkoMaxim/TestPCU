@@ -12,7 +12,6 @@ public class FirmInfo2533Helper extends BaseHelper {
 	private int click_type = 3;
 	
 	private String handle;
-	//private boolean isFirstClick = false;
 	
 	public FirmInfo2533Helper(ApplicationManager app) {
 		super(app);
@@ -29,26 +28,13 @@ public class FirmInfo2533Helper extends BaseHelper {
 	
 	public FirmInfo2533Helper ensurePageLoaded() {
 		ensurePageLoaded(page);
-		//ensurePresenceObjectLoaded(page.getElementForEnsurePageLoaded1());
 		wait.until(ExpectedConditions.presenceOfElementLocated(page.getHeader().changeRegionLink()));
-		//ensurePresenceObjectLoaded(page.getElementForEnsurePageLoaded2());
 		wait.until(ExpectedConditions.presenceOfElementLocated(page.getBreadcrumbs().breadcrumbs()));
 		
 		handle = driver.getWindowHandle();
 		
 		return this;
 	}
-	
-	/*public FirmInfo2533Helper openNewTab() {
-		openNewTab();
-		return this;
-	}*/
-	
-	/*public FirmInfo2533Helper changeRegionTo(String region) {
-		changeRegionTo(page.getHeader(), region);
-		
-		return this;
-	}*/
 	
 	public FirmInfo2533Helper changeRegionToAllUkraine() {
 		changeRegionTo(page.getHeader(), 0);
@@ -67,10 +53,6 @@ public class FirmInfo2533Helper extends BaseHelper {
 	}
 	
 	public FirmInfo2533Helper checkClickInTable() {
-		//isFirstClick = isFirstClick == false ? true : false;
-		
-		//app.getApplicationManagerHelper().getApplicationManagerClicks().getFirmClicksPageHelper().openPage(2533).checkLastClickFirm2533(click_type);
-		
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
 		
 		if (tabs.size() == 1)

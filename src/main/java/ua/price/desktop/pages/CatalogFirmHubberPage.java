@@ -15,12 +15,6 @@ public class CatalogFirmHubberPage extends PageBase {
 		hubberPopUp = new HubberPopUp();
 	}
 	
-	/*public CatalogFirmHubberPageDesktopPriceUa openPage() {
-		driver.get(url);
-		
-		return this;
-	}*/
-	
 	public By getElementForEnsurePageLoaded1() {
 		return By.id("filter_price");
 	}

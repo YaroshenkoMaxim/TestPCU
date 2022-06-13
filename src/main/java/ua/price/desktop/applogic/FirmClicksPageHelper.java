@@ -12,7 +12,6 @@ public class FirmClicksPageHelper extends BaseHelper {
 	private FirmClicksPage page;
 	private int click_type = 0;
 	private int click_id = 0;
-	private int click_count_for_new_type = 0;
 	private String handle;
 	private int same_type_click_number = 0;
 	
@@ -22,17 +21,6 @@ public class FirmClicksPageHelper extends BaseHelper {
 	}
 	
 	public FirmClicksPageHelper openPage(int firm_id) {
-		
-		
-		//int year = 2021;
-		//int month = 02;
-		//int day = 15;
-		
-		//System.out.println(LocalDate.now());
-		
-		//http://web5.release.price.ua/clicks.php?firm_id=2533&date=2021-02-15&offset=0&limit=100&model_id=0
-		//?firm_id=2533&date=2021-02-15&offset=0&limit=10&model_id=0";
-		//String getParameters = String.format("?firm_id=%d&date=%d-%02d-%d&offset=0&limit=100&model_id=0", firm_id, year, month, day);
 		String getParameters = String.format("?firm_id=%d&date=%s&offset=0&limit=100&model_id=0", firm_id, LocalDate.now());
 		
 		driver.get(baseClicksUrl + FirmClicksPage.url + getParameters);
@@ -47,10 +35,6 @@ public class FirmClicksPageHelper extends BaseHelper {
 		int clickMonCalcFromTable = Integer.parseInt(driver.findElement(page.getLastClickMonCalcCell(1)).getText());
 		double clickCostEtalon = 0.0;
 		int clickMonCalcEtalon = 0;
-		
-		//click_count_for_new_type++;
-		
-		System.out.println("click_type: " + click_type + " this.click_type: " + this.click_type);
 		
 		switch (click_type) {
 			case 1:
@@ -75,27 +59,20 @@ public class FirmClicksPageHelper extends BaseHelper {
 				clickCostEtalon = Firm2533.getDiscountedCost();
 		}
 		
-		if (click_type != this.click_type)// && (click_count_for_new_type == 1))// || click_count_for_new_type == 2))
+		if (click_type != this.click_type)
 			clickMonCalcEtalon = 1;
 			
 		try {
-			System.out.println(click_id + ">" + this.click_id);
 			Assert.assertTrue(click_id > this.click_id);
-			System.out.println(clickCostFromTable + "==" + clickCostEtalon);
 			Assert.assertTrue(clickCostFromTable == clickCostEtalon);
-			System.out.println(clickMonCalcFromTable + "==" + clickMonCalcEtalon);
 			Assert.assertTrue(clickMonCalcFromTable == clickMonCalcEtalon);
 			this.click_id = click_id;
-			System.out.println(click_id + "   " + click_type + "   " + clickCostFromTable + " == " + clickCostEtalon + "   " + clickMonCalcFromTable);
 		}
 		catch (AssertionError e) {
 			System.out.println("\nError!");
 			System.out.println(click_id + "   " + click_type + "   " + clickCostFromTable + " == " + clickCostEtalon + "   " + clickMonCalcFromTable);
 			openPage(2533).checkLastClickFirm2533(click_type);
 		}
-		
-		//if (click_type != this.click_type)
-			//click_count_for_new_type = 0;
 		
 		this.click_type = click_type;
 	}
@@ -106,8 +83,6 @@ public class FirmClicksPageHelper extends BaseHelper {
 		int clickMonCalcFromTable = Integer.parseInt(driver.findElement(page.getLastClickMonCalcCell(1)).getText());
 		double clickCostEtalon = 0.0;
 		int clickMonCalcEtalon = 0;
-		
-		
 		
 		switch (click_type) {
 			case 9:
@@ -123,14 +98,10 @@ public class FirmClicksPageHelper extends BaseHelper {
 			clickMonCalcEtalon = 1;
 				
 		try {
-			System.out.println(click_id + ">" + this.click_id);
 			Assert.assertTrue(click_id > this.click_id);
-			System.out.println(clickCostFromTable + "==" + clickCostEtalon);
-			System.out.println(clickMonCalcFromTable + "==" + clickMonCalcEtalon);
 			Assert.assertTrue(clickCostFromTable == clickCostEtalon);
 			Assert.assertTrue(clickMonCalcFromTable == clickMonCalcEtalon);
 			this.click_id = click_id;
-			System.out.println(click_id + "   " + click_type + "   " + clickCostFromTable + " == " + clickCostEtalon + "   " + clickMonCalcFromTable);
 		}
 		catch (AssertionError e) {
 			openPage(79503).checkLastClickFirm79503(click_type);
@@ -141,20 +112,7 @@ public class FirmClicksPageHelper extends BaseHelper {
 		this.click_type = click_type;
 		
 		same_type_click_number++;
-	}	
-	
-	/*public void processClicks() {
-		
-		
-		
-		for (int clickNumber = 2; clickNumber > 0; clickNumber--) {
-			int click_id = Integer.parseInt(driver.findElement(page.getLastClickIdCell(clickNumber)).getText());
-			double clickCostFromTable = Double.parseDouble(driver.findElement(page.getLastClickCostCell(clickNumber)).getText());
-			int clickMonCalcFromTable = Integer.parseInt(driver.findElement(page.getLastClickMonCalcCell(clickNumber)).getText());
-			
-			//System.out.println(click_id + "   " + click_type + "   " + clickCostFromTable + " == " + clickCostEtalon + "   " + clickMonCalcFromTable);
-		}
-	}*/
+	}
 	
 	public String getHandle() {
 		return handle;

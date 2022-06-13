@@ -19,8 +19,4 @@ public class KNU5076Page extends PageBase {
 	public int getCardsCount() {
 		return cardsCount;
 	}
-	/*
-	public void compareCardsCount() {
-		super.compareCardsCount(getCardsCount(), "//div[starts-with(@class,'product-block type2')]");
-	}*/
 }

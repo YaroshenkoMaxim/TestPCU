@@ -8,16 +8,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import ua.price.util.Browser;
 import ua.price.util.PropertyLoader;
 
-//import applogic.common.ApplicationManagerHelper;
-
 public class ApplicationManager {
 	private String baseUrl;
 	private WebDriver driver;
 	private WebDriverWait wait;
 	private String baseClicksUrl;
 	
-	//private ApplicationManagerHelper applicationManagerHelper;
-	//private BaseHelperDesktopPriceUa baseHelper;
 	private CatalogFirm2533Helper catalogFirm2533PageHelper;
 	private FirmInfo2533Helper firmInfo2533Helper;
 	private KNU5076Helper knu5076Helper;
@@ -34,21 +30,11 @@ public class ApplicationManager {
 	
 	private FirmClicksPageHelper firmClicksPageHelper;
 	
-	//public ApplicationManagerDesktopPriceUa(ApplicationManagerHelper applicationManagerHelper) {
 	public ApplicationManager() {
 		baseUrl = (new PropertyLoader()).loadProperty("url");
-				
-		//driver = new Browser().initDriver(BrowserName.CHROME_DESKTOP);//.initDriver(Browser.BrowserName.CHROME_DESKTOP);
-		
 		driver = new Browser().initDriver((new PropertyLoader()).loadProperty("browser"));
-		
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		
 		baseClicksUrl = (new PropertyLoader()).loadProperty("clicksUrl");
-		
-		//this.applicationManagerHelper = applicationManagerHelper;
-		
-		//baseHelper = new BaseHelperDesktopPriceUa(this);
 		
 		catalogFirm2533PageHelper = new CatalogFirm2533Helper(this);
 		firmInfo2533Helper = new FirmInfo2533Helper(this);
@@ -63,7 +49,6 @@ public class ApplicationManager {
 		modelInSaleHasReviewOtziviTabHelper = new ModelInSaleHasReviewOtziviTabHelper(this);
 		modelInSaleHasSalePricesTabHelper = new ModelInSaleHasSalePricesTabHelper(this);
 		outclickHelper = new OutclickHelper(this);
-		
 		firmClicksPageHelper = new FirmClicksPageHelper(this);
 	}
 	
@@ -82,14 +67,6 @@ public class ApplicationManager {
 	protected String getBaseClicksUrl() {
 		return baseClicksUrl;
 	}
-	
-	/*public BaseHelperDesktopPriceUa getNavigationHelper() {
-		return baseHelper;
-	}*/
-	
-	/*protected ApplicationManagerHelper getApplicationManagerHelper() {
-		return applicationManagerHelper;
-	}*/
 	
 	public CatalogFirm2533Helper getCatalogFirm2533Helper() {
 		return catalogFirm2533PageHelper;

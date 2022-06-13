@@ -8,7 +8,6 @@ public class ContextKNU5076 extends ObjectBase {
 	}
 	
 	public By getContextNameLink() {
-		//return By.xpath("//a[contains(@class,'slick-active')]/div[@class='context-descr']/div[text()='���-����. ������� �������.']");
 		return By.xpath("//a[@data-offer-id='7056']/div[@class='context-descr']");
 	}
 }

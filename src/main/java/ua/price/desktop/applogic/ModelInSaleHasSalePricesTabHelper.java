@@ -30,12 +30,6 @@ public class ModelInSaleHasSalePricesTabHelper extends BaseHelper {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(page.getRateStar().rateStar()));
 	}
 	
-	/*public ModelInSaleHasSalePricesTabHelper changeRegionTo(String region) {
-		changeRegionTo(page.getHeader(), region);
-		
-		return this;
-	}*/
-	
 	public ModelInSaleHasSalePricesTabHelper changeRegionToAllUkraine() {
 		changeRegionTo(page.getHeader(), 0);
 		
@@ -63,17 +57,13 @@ public class ModelInSaleHasSalePricesTabHelper extends BaseHelper {
 		driver.findElement(page.getPriceLineHasSaleModelPage().phoneButton).click();
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(page.getPriceLineHasSaleModelPage().phone));
-		
-		//app.getOutclickPageHelper().closeMainGateTabAndSwitchToOldTab();
+
 		click_type = 6;
 		
 		return this;
 	}
 	
 	public ModelInSaleHasSalePricesTabHelper checkClickInTable() {
-		//isFirstClick = isFirstClick == false ? true : false;
-		
-		//app.getApplicationManagerHelper().getApplicationManagerClicks().getFirmClicksPageHelper().openPage(2533).checkLastClickFirm2533(click_type);
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
 		
 		if (tabs.size() == 1)
@@ -82,8 +72,6 @@ public class ModelInSaleHasSalePricesTabHelper extends BaseHelper {
 			driver.switchTo().window(app.getFirmClicksPageHelper().getHandle());
 		app.getFirmClicksPageHelper().openPage(2533).checkLastClickFirm2533(click_type);
 		driver.switchTo().window(handle);
-		//switchToOriginalTab();
-		//switchToOtherTab();
 		
 		return this;
 	}

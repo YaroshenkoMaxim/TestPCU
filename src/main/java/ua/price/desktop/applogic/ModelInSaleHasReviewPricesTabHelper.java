@@ -30,12 +30,6 @@ public class ModelInSaleHasReviewPricesTabHelper extends BaseHelper {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(page.getRateStar().rateStar()));
 	}
 	
-	/*public ModelInSaleHasReviewPricesTabHelper changeRegionTo(String region) {
-		changeRegionTo(page.getHeader(), region);
-		
-		return this;
-	}*/
-	
 	public ModelInSaleHasReviewPricesTabHelper changeRegionToAllUkraine() {
 		changeRegionTo(page.getHeader(), 0);
 		
@@ -65,21 +59,16 @@ public class ModelInSaleHasReviewPricesTabHelper extends BaseHelper {
 
 		driver.findElement(By.xpath("//body")).sendKeys(Keys.PAGE_DOWN);
 		driver.findElement(page.getPriceLineModelPage().pricelineDescription).sendKeys(Keys.PAGE_DOWN);
-		//driver.findElement(page.getPriceLineModelPage().pricelineDescription).sendKeys(Keys.DOWN);
 		driver.findElement(page.getPriceLineModelPage().phoneButton).click();
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(page.getPriceLineModelPage().phone));
 		
-		//app.getOutclickPageHelper().closeMainGateTabAndSwitchToOldTab();
 		click_type = 6;
 		
 		return this;
 	}
 	
 	public ModelInSaleHasReviewPricesTabHelper checkClickInTable() {
-		//isFirstClick = isFirstClick == false ? true : false;
-		
-		//app.getApplicationManagerHelper().getApplicationManagerClicks().getFirmClicksPageHelper().openPage(2533).checkLastClickFirm2533(click_type);
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
 		
 		if (tabs.size() == 1)
@@ -88,8 +77,6 @@ public class ModelInSaleHasReviewPricesTabHelper extends BaseHelper {
 			driver.switchTo().window(app.getFirmClicksPageHelper().getHandle());
 		app.getFirmClicksPageHelper().openPage(2533).checkLastClickFirm2533(click_type);
 		driver.switchTo().window(handle);
-		//switchToOriginalTab();
-		//switchToOtherTab();
 		
 		return this;
 	}
