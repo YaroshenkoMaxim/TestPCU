@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="27.955" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="85.564" tests="0" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="18"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\Максим\Selenium\ChromeDriver\chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
@@ -14,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18.0.1.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Максим\AppData\Local\Temp\surefire15780845069314839733\surefirebooter5804661740118666667.jar C:\Users\Максим\AppData\Local\Temp\surefire15780845069314839733 2022-05-24T14-51-53_213-jvmRun1 surefire6096743554189366810tmp surefire_02314207503992160524tmp"/>
+    <property name="sun.java.command" value="C:\Users\Максим\AppData\Local\Temp\surefire15668501958783299210\surefirebooter4474292520757958702.jar C:\Users\Максим\AppData\Local\Temp\surefire15668501958783299210 2022-06-06T03-16-54_671-jvmRun1 surefire11872415499555233001tmp surefire_09359130706571519826tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Максим"/>
@@ -28,7 +29,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Максим\AppData\Local\Temp\surefire15780845069314839733\surefirebooter5804661740118666667.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Максим\AppData\Local\Temp\surefire15668501958783299210\surefirebooter4474292520757958702.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="18.0.1.1+2-6"/>
@@ -44,35 +45,14 @@
     <property name="java.version" value="18.0.1.1"/>
     <property name="user.dir" value="M:\Testing\Selenium\TestPCU"/>
     <property name="os.arch" value="amd64"/>
-    <property name="webdriver.gecko.driver" value="C:\Users\Максим\Selenium\GeckoDriver\geckodriver.exe"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="native.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-18.0.1.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Sony\VAIO Improvement\;C:\Program Files (x86)\Sony\VAIO Startup Setting Tool;C:\Program Files (x86)\Windows Live\Shared;C:\Borland\BCC55\Bin\;C:\Program Files\Java\jdk-18.0.1.1\bin;C:\Program Files\Git\cmd;C:\Users\Максим\apache-maven-3.5.0\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-18.0.1.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Sony\VAIO Improvement\;C:\Program Files (x86)\Sony\VAIO Startup Setting Tool;C:\Program Files (x86)\Windows Live\Shared;C:\Borland\BCC55\Bin\;C:\Program Files\Java\jdk-18.0.1.1\bin;C:\Users\Максим\apache-maven-3.5.0\bin;C:\Program Files\Git\cmd;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="18.0.1.1+2-6"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="test" classname="ua.price.tests.TrialTest" time="26.945">
-    <system-out><![CDATA[https://sravni.ua
-firefox
-]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1653393116920	geckodriver	INFO	Listening on 127.0.0.1:56154
-1653393117790	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62407" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\2BA0~1\\AppData\\Local\\Temp\\rust_mozprofileBQR3mV"
-1653393118484	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\2BA0~1\\AppData\\Local\\Temp\\rust_mozprofileBQR3mV\\search.json.mozlz4", (void 0)))
-DevTools listening on ws://localhost:62407/devtools/browser/ce05fa25-4309-4f25-aabc-63a4a23f7b42
-1653393128494	Marionette	INFO	Listening on port 61402
-Read port: 61402
-1653393128703	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-мая 24, 2022 2:52:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-JavaScript warning: https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js, line 17: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-]]></system-err>
-  </testcase>
 </testsuite>

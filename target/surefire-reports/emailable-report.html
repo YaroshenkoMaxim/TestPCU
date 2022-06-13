@@ -9,10 +9,91 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">MyTestSuite1</th></tr>
-<tr><td><a href="#t0">Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">27 027</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">84 436</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MyTestSuite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">ua.price.tests.TrialTest</td><td><a href="#m0">test</a></td><td rowspan="1">1653393115654</td><td rowspan="1">26941</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MyTestSuite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ua.price.mobile.tests.TestClicks</td><td><a href="#m0">testClickType1</a></td><td rowspan="1">1654474635681</td><td rowspan="1">68676</td></tr></tbody>
 </table>
-<h2>Tests</h2><h3 id="m0">ua.price.tests.TrialTest#test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Tests</h2><h3 id="m0">ua.price.mobile.tests.TestClicks#testClickType1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=102.0.5005.63)
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;МАКСИМ-VAIO&apos;, ip: &apos;172.27.237.200&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [858e542c30e6c0e119c43a575b04d53f, getCurrentWindowHandle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\2BA0~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56617}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56617/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 858e542c30e6c0e119c43a575b04d53f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.RemoteWebDriver.getWindowHandle(RemoteWebDriver.java:485)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.openPage(FirmClicksPageHelper.java:39)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.FirmClicksPageHelper.checkLastClickFirm2533(FirmClicksPageHelper.java:94)
+	at ua.price.mobile.applogic.CatalogFirm2533Helper.checkClickInTable(CatalogFirm2533Helper.java:130)
+	at ua.price.mobile.tests.TestClicks.testClickType1(TestClicks.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import ua.price.util.Browser;
-import ua.price.util.Browser.BrowserName;
 import ua.price.util.PropertyLoader;
 
 //import applogic.common.ApplicationManagerHelper;
@@ -25,11 +24,11 @@ public class ApplicationManager {
 	private SalesFirm2533Helper salesFirm2533Helper;
 	private DiscountedFirm2533Helper discountedFirm2533Helper;
 	private CatalogFirmHubberHelper catalogFirmHubberHelper;
-	/*private ModelArchiveHasReviewOpisanieTabHelper modelArchiveHasReviewOpisanieTabHelper;
+	private ModelArchiveHasReviewOpisanieTabHelper modelArchiveHasReviewOpisanieTabHelper;
 	private ModelArchiveHasReviewPricesTabHelper modelArchiveHasReviewPricesTabHelper;
-	private ModelInSaleHasReviewOpisanieTabHelper modelInSaleHasReviewOpisanieTabHelper;*/
+	private ModelInSaleHasReviewOpisanieTabHelper modelInSaleHasReviewOpisanieTabHelper;
 	private ModelInSaleHasReviewPricesTabHelper modelInSaleHasReviewPricesTabHelper;
-	//private ModelInSaleHasReviewOtziviTabHelper modelInSaleHasReviewOtziviTabHelper;
+	private ModelInSaleHasReviewOtziviTabHelper modelInSaleHasReviewOtziviTabHelper;
 	private ModelInSaleHasSalePricesTabHelper modelInSaleHasSalePricesTabHelper;
 	private OutclickHelper outclickHelper;
 	
@@ -39,7 +38,9 @@ public class ApplicationManager {
 	public ApplicationManager() {
 		baseUrl = (new PropertyLoader()).loadProperty("url");
 				
-		driver = new Browser().initDriver(BrowserName.CHROME_DESKTOP);//.initDriver(Browser.BrowserName.CHROME_DESKTOP);
+		//driver = new Browser().initDriver(BrowserName.CHROME_DESKTOP);//.initDriver(Browser.BrowserName.CHROME_DESKTOP);
+		
+		driver = new Browser().initDriver((new PropertyLoader()).loadProperty("browser"));
 		
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		
@@ -55,11 +56,11 @@ public class ApplicationManager {
 		salesFirm2533Helper = new SalesFirm2533Helper(this);
 		discountedFirm2533Helper = new DiscountedFirm2533Helper(this);
 		catalogFirmHubberHelper = new CatalogFirmHubberHelper(this);
-		/*modelArchiveHasReviewOpisanieTabHelper = new ModelArchiveHasReviewOpisanieTabHelper(this);
+		modelArchiveHasReviewOpisanieTabHelper = new ModelArchiveHasReviewOpisanieTabHelper(this);
 		modelArchiveHasReviewPricesTabHelper = new ModelArchiveHasReviewPricesTabHelper(this);
-		modelInSaleHasReviewOpisanieTabHelper = new ModelInSaleHasReviewOpisanieTabHelper(this);*/
+		modelInSaleHasReviewOpisanieTabHelper = new ModelInSaleHasReviewOpisanieTabHelper(this);
 		modelInSaleHasReviewPricesTabHelper = new ModelInSaleHasReviewPricesTabHelper(this);
-		//modelInSaleHasReviewOtziviTabHelper = new ModelInSaleHasReviewOtziviTabHelper(this);
+		modelInSaleHasReviewOtziviTabHelper = new ModelInSaleHasReviewOtziviTabHelper(this);
 		modelInSaleHasSalePricesTabHelper = new ModelInSaleHasSalePricesTabHelper(this);
 		outclickHelper = new OutclickHelper(this);
 		
@@ -114,7 +115,7 @@ public class ApplicationManager {
 		return catalogFirmHubberHelper;
 	}
 	
-	/*public ModelArchiveHasReviewOpisanieTabHelper getModelArchiveHasReviewOpisanieTabHelper() {
+	public ModelArchiveHasReviewOpisanieTabHelper getModelArchiveHasReviewOpisanieTabHelper() {
 		return modelArchiveHasReviewOpisanieTabHelper;
 	}
 	
@@ -124,15 +125,15 @@ public class ApplicationManager {
 	
 	public ModelInSaleHasReviewOpisanieTabHelper getModelInSaleHasReviewOpisanieTabHelper() {
 		return modelInSaleHasReviewOpisanieTabHelper;
-	}*/
+	}
 	
 	public ModelInSaleHasReviewPricesTabHelper getModelInSaleHasReviewPricesTabHelper() {
 		return modelInSaleHasReviewPricesTabHelper;
 	}
 	
-	/*public ModelInSaleHasReviewOtziviTabHelper getModelInSaleHasReviewOtziviTabHelper() {
+	public ModelInSaleHasReviewOtziviTabHelper getModelInSaleHasReviewOtziviTabHelper() {
 		return modelInSaleHasReviewOtziviTabHelper;
-	}*/
+	}
 	
 	public ModelInSaleHasSalePricesTabHelper getModelInSaleHasSalePricesTabHelper() {
 		return modelInSaleHasSalePricesTabHelper;

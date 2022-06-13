@@ -42,6 +42,12 @@ public class ModelInSaleHasReviewPricesTabHelper extends BaseHelper {
 		return this;
 	}
 	
+	public ModelInSaleHasReviewPricesTabHelper changeRegionToKyiv() {
+		changeRegionTo(page.getHeader(), 1);
+		
+		return this;
+	}
+	
 	public ModelInSaleHasReviewPricesTabHelper closeAnonser() {
 		closeAnonser(page.getAnonser());
 		

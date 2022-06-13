@@ -4,7 +4,7 @@ import ua.price.desktop.objects.PriceLineHasSaleModelPage;
 import ua.price.desktop.objects.RateStar;
 
 public class ModelInSaleHasSalePricesTabPage extends PageBase {
-	public static String url = "/drugie_bej-begi_istorija_anglijskogo_futbola_9789662320121/skidki/3465832.html";
+	public static String url = "/drugie_chernoe_taro_78_kart_9785904844585/prices/3465523.html";
 	
 	private RateStar rateStar;
 	private PriceLineHasSaleModelPage priceLineHasSaleModelPage;

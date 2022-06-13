@@ -37,7 +37,6 @@ public class FirmClicksPageHelper extends BaseHelper {
 		
 		driver.get(baseClicksUrl + FirmClicksPage.url + getParameters);
 		handle = driver.getWindowHandle();
-		System.out.println(this.getClass().getName() + "   " + driver.getWindowHandle());
 		
 		return this;
 	}

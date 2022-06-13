@@ -38,7 +38,7 @@
 				<version>3.0.0-M6</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/${suite}.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
@@ -54,10 +54,11 @@
   	<profile>
       <id>test</id>
       <properties>
-        <env>test</env>
+        <!--<env>test</env>-->
         <url>https://price.ua</url>
-        <browser>chrome</browser>
+        <browser>chrome_desktop</browser>
         <clicksUrl>http://web5.release.price.ua</clicksUrl>
+        <suite>testngDesktop</suite>
       </properties>
 	    <activation>
 			<activeByDefault>true</activeByDefault>
@@ -66,10 +67,11 @@
     <profile>
       <id>test2</id>
       <properties>
-        <env>test2</env>
-        <url>https://sravni.ua</url>
-        <browser>firefox</browser>
+        <!--<env>test2</env>-->
+        <url>https://price.ua/ua</url>
+        <browser>chrome_mobile</browser>
         <clicksUrl>http://web5.release.price.ua</clicksUrl>
+        <suite>testngMobile</suite>
       </properties>
     </profile>
   </profiles>

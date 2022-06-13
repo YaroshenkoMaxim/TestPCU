@@ -3,12 +3,12 @@
 <suite name="Failed suite [MyTestSuite1]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Tests(failed)">
     <classes>
-      <class name="ua.price.tests.TestClicksDesktopPriceUa">
+      <class name="ua.price.mobile.tests.TestClicks">
         <methods>
           <include name="setUp"/>
-          <include name="testClicksDesktopPriceUa"/>
+          <include name="testClickType1"/>
         </methods>
-      </class> <!-- ua.price.tests.TestClicksDesktopPriceUa -->
+      </class> <!-- ua.price.mobile.tests.TestClicks -->
     </classes>
   </test> <!-- Tests(failed) -->
 </suite> <!-- Failed suite [MyTestSuite1] -->
