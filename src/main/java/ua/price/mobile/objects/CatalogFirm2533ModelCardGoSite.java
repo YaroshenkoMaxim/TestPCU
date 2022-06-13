@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 public class CatalogFirm2533ModelCardGoSite {
 	public By getButtonBuy() {
-		return By.xpath("//span[text()='Бей-Беги. История английского футбола 9789662320121']");
+		return By.xpath("//div[@data-tracker-mid='3465832']/a/div/div/div/div[@class='model-name ga_model_name ga_card_simple_title']/span");
 	}
 	
 	public By getCardName() {
