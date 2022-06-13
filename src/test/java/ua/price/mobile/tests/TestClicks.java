@@ -36,22 +36,22 @@ public class TestClicks extends TestBase {
 	@Test
 	public void testClickType4() {
 		app.getKNU5076Helper().openPage().changeRegionToAllUkraine()
-		.clickContextFirm2533().checkClickInTable()
-		.clickContextFirm2533().checkClickInTable();	
+							.clickContextFirm2533().checkClickInTable()
+							.clickContextFirm2533().checkClickInTable();	
 	}
 	
 	@Test
 	public void testClickType5() {
 		app.getSalesFirm2533Helper().openPage()
-										.clickToShopButton().checkClickInTable()
-										.clickToShopButton().checkClickInTable();
+									.clickToShopButton().checkClickInTable()
+									.clickToShopButton().checkClickInTable();
 		
 	}
 	
 	@Test
 	public void testClickType6() {
 		app.getSalesFirm2533Helper().openPage()
-										.clickShowPhoneButton().checkClickInTable();
+									.clickShowPhoneButton().checkClickInTable();
 		
 	}
 }

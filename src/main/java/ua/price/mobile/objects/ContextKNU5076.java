@@ -7,5 +7,5 @@ public class ContextKNU5076 {
 	
 	public final By contextName = By.xpath("//div[contains(@class,'slick-active')]/div/div[@class='context-descr']/div[text()='Бей-Беги. История футбола.']");
 	
-	public final By contextButton = By.xpath("//div[contains(@class,'slick-active')]/div/div[@class='context-descr']/div[text()='Бей-Беги. История футбола.']/following::a[1]");
+	public final By contextButton = By.xpath("//div[contains(@class,'slick-active')]/div/div[@class='context-descr']/div/following::a[@data-offer-id='7056']");
 }
