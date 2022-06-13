@@ -11,8 +11,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Browser {
 	private WebDriver driver;
 	
-	private final String PATH_TO_CHROMEDRIVER = "C:\\Users\\Максим\\Selenium\\ChromeDriver\\chromedriver.exe";
-	private final String PATH_TO_GECKODRIVER = "C:\\Users\\Максим\\Selenium\\GeckoDriver\\geckodriver.exe";
+	private final String PATH_TO_CHROMEDRIVER = "C:\\Program Files\\ChromeDriver\\chromedriver.exe";
+	private final String PATH_TO_GECKODRIVER = "C:\\Program Files\\GeckoDriver\\geckodriver.exe";
 	public enum BrowserName {CHROME_DESKTOP, CHROME_TABLET, CHROME_MOBILE, FIREFOX_DESKTOP};
 	
 	public WebDriver initDriver(String browser) {
