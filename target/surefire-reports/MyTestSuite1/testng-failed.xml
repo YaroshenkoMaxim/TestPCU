@@ -3,17 +3,18 @@
 <suite name="Failed suite [MyTestSuite1]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Tests(failed)" verbose="0">
     <classes>
-      <class name="ua.price.mobile.tests.TestClicks">
+      <class name="ua.price.desktop.tests.TestClicks">
         <methods>
-          <include name="testClickType4"/>
-          <include name="testClickType5"/>
           <include name="testClickType6"/>
-          <include name="setUp"/>
+          <include name="testClickType4"/>
           <include name="testClickType1"/>
-          <include name="testClickType"/>
           <include name="testClickType2"/>
+          <include name="setUp"/>
+          <include name="testClickType3"/>
+          <include name="testClickType9"/>
+          <include name="testClickType8"/>
         </methods>
-      </class> <!-- ua.price.mobile.tests.TestClicks -->
+      </class> <!-- ua.price.desktop.tests.TestClicks -->
     </classes>
   </test> <!-- Tests(failed) -->
 </suite> <!-- Failed suite [MyTestSuite1] -->
