@@ -43,7 +43,7 @@ public class KNU5076Helper extends BaseHelper {
 		handle = driver.getWindowHandle();
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
 		
-		wait.until(ExpectedConditions.visibilityOfElementLocated(page.getContextKNU5076().contextName));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(page.getContextKNU5076().contextButton));
 		driver.findElement(page.getContextKNU5076().contextButton).click();
 		
 		ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
