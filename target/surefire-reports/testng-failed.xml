@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [MyTestSuite1]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" name="Tests(failed)" verbose="0">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [MyTestSuite1]">
+  <test thread-count="5" verbose="0" name="Tests(failed)">
     <classes>
-      <class name="ua.price.desktop.tests.TestClicks">
+      <class name="ua.price.mobile.tests.TestClicks">
         <methods>
-          <include name="testClickType6"/>
           <include name="testClickType4"/>
-          <include name="testClickType1"/>
-          <include name="testClickType2"/>
+          <include name="testClickType5"/>
+          <include name="testClickType6"/>
           <include name="setUp"/>
-          <include name="testClickType3"/>
-          <include name="testClickType9"/>
-          <include name="testClickType8"/>
+          <include name="testClickType1"/>
+          <include name="testClickType"/>
+          <include name="testClickType2"/>
         </methods>
-      </class> <!-- ua.price.desktop.tests.TestClicks -->
+      </class> <!-- ua.price.mobile.tests.TestClicks -->
     </classes>
   </test> <!-- Tests(failed) -->
 </suite> <!-- Failed suite [MyTestSuite1] -->
