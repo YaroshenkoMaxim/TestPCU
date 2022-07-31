@@ -19,7 +19,6 @@ public class Browser {
 		switch (browser) {
 			case "chrome_desktop":
 				System.setProperty("webdriver.chrome.driver", PATH_TO_CHROMEDRIVER);
-				System.out.println(PATH_TO_CHROMEDRIVER);
 				driver = new ChromeDriver();
 				driver.manage().window().maximize();
 				break;
