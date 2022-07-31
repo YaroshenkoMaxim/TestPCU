@@ -11,14 +11,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Browser {
 	private WebDriver driver;
 	
-	private final String PATH_TO_CHROMEDRIVER = "C:\\Program Files\\ChromeDriver\\chromedriver.exe";
-	private final String PATH_TO_GECKODRIVER = "C:\\Program Files\\GeckoDriver\\geckodriver.exe";
+	private final String PATH_TO_CHROMEDRIVER = System.getProperty("user.dir") + (new PropertyLoader()).loadProperty("chromedriver");
+	private final String PATH_TO_GECKODRIVER = System.getProperty("user.dir") + (new PropertyLoader()).loadProperty("geckodriver");
 	public enum BrowserName {CHROME_DESKTOP, CHROME_TABLET, CHROME_MOBILE, FIREFOX_DESKTOP};
 	
 	public WebDriver initDriver(String browser) {
 		switch (browser) {
 			case "chrome_desktop":
 				System.setProperty("webdriver.chrome.driver", PATH_TO_CHROMEDRIVER);
+				System.out.println(PATH_TO_CHROMEDRIVER);
 				driver = new ChromeDriver();
 				driver.manage().window().maximize();
 				break;

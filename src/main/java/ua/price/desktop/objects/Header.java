@@ -2,7 +2,7 @@ package ua.price.desktop.objects;
 
 import org.openqa.selenium.By;
 
-public class Header extends ObjectBase {
+public class Header {
 	public By getElementForEnsureObjectLoaded() {
 		return changeRegionLink();
 	}

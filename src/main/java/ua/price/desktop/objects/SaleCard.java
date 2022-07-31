@@ -2,7 +2,7 @@ package ua.price.desktop.objects;
 
 import org.openqa.selenium.By;
 
-public class SaleCard extends ObjectBase {
+public class SaleCard {
 	public By getToShopButton() {
 		return By.xpath("//a[@class='btn btn-orange active-go']");
 	}

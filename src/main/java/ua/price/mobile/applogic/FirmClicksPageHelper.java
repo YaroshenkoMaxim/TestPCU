@@ -40,25 +40,25 @@ public class FirmClicksPageHelper extends BaseHelper {
 		
 		switch (click_type) {
 			case 1:
-				clickCostEtalon = Firm2533.getGoSiteCost();
+				clickCostEtalon = Firm2533.GO_SITE_COST;
 				break;
 			case 2:
-				clickCostEtalon = Firm2533.getBidCost();
+				clickCostEtalon = Firm2533.BID_COST;
 				break;
 			case 3:
-				clickCostEtalon = Firm2533.getFirmInfoCost();
+				clickCostEtalon = Firm2533.FIRM_INFO_COST;
 				break;
 			case 4:
-				clickCostEtalon = Firm2533.getContextCost();
+				clickCostEtalon = Firm2533.CONTEXT_COST;
 				break;
 			case 5:
-				clickCostEtalon = Firm2533.getSaleCost();
+				clickCostEtalon = Firm2533.SALE_COST;
 				break;
 			case 6:
-				clickCostEtalon = Firm2533.getShowPhoneCost();
+				clickCostEtalon = Firm2533.SHOW_PHONE_COST;
 				break;
 			case 8:
-				clickCostEtalon = Firm2533.getDiscountedCost();
+				clickCostEtalon = Firm2533.DISCOUNTED_COST;
 		}
 		
 		if (click_type != this.click_type)
@@ -88,7 +88,7 @@ public class FirmClicksPageHelper extends BaseHelper {
 				
 		switch (click_type) {
 			case 9:
-				clickCostEtalon = Firm79503.getHubberCost();
+				clickCostEtalon = Firm79503.HUBBER_COST;
 		}
 		
 		if (click_type != this.click_type) {

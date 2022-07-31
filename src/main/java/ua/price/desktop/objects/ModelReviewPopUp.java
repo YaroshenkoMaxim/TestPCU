@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 import org.openqa.selenium.By;
 
-public class ModelReviewPopUp extends ObjectBase {
+public class ModelReviewPopUp {
 	public String nameText= "Test Name";
 	
 	public By getReviewNameField() {

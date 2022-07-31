@@ -2,7 +2,7 @@ package ua.price.desktop.objects;
 
 import org.openqa.selenium.By;
 
-public class OutclickPopUp extends ObjectBase {
+public class OutclickPopUp {
 	public By getElementForEnsureObjectLoaded() {
 		return getCloseButton();
 	}

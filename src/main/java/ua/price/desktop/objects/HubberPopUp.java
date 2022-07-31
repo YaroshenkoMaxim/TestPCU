@@ -2,7 +2,7 @@ package ua.price.desktop.objects;
 
 import org.openqa.selenium.By;
 
-public class HubberPopUp extends ObjectBase {
+public class HubberPopUp {
 	public By getElementForEnsureObjectLoaded() {
 		return By.id("js-dialog-order-product");
 	}

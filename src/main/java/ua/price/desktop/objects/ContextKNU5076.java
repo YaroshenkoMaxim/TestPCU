@@ -2,7 +2,7 @@ package ua.price.desktop.objects;
 
 import org.openqa.selenium.By;
 
-public class ContextKNU5076 extends ObjectBase {
+public class ContextKNU5076 {
 	public By getElementForEnsureObjectLoaded() {
 		return By.xpath("//div[@class='context-slider-wrap loaded']");
 	}

@@ -2,7 +2,7 @@ package ua.price.desktop.objects;
 
 import org.openqa.selenium.By;
 
-public class ModelReviewThanksPopUp extends ObjectBase {
+public class ModelReviewThanksPopUp {
 	public String thanksTextString = "";
 	
 	public By thanksText = By.xpath("//div[@class='success-submit active']/div[1]/div[1]");
